@@ -2,6 +2,7 @@ import pytest
 
 from rgs_textutils import remove_punctuation
 
+
 @pytest.mark.parametrize(
     ["text"],
     [
@@ -9,10 +10,11 @@ from rgs_textutils import remove_punctuation
         ("hello",),
         ("         ",),
         ("Hello",),
-    ]
+    ],
 )
 def test_no_punctuation(text):
     assert remove_punctuation(text) == text
+
 
 @pytest.mark.parametrize(
     ["text", "expected"],
