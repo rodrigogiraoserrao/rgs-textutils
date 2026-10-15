@@ -1,4 +1,5 @@
 import string
+
 import rich
 
 _TABLE = str.maketrans("", "", string.punctuation)

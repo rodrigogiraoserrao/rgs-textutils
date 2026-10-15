@@ -45,3 +45,23 @@
 5. Run a formatter, a linter, and a type checker.
 6. Fix all issues you find along the way.
 7. Take your project and upload it to a GH repo.
+
+
+# Testing
+
+Tests live in `<project root>/tests`.
+
+```bash
+% uv add --dev pytest  # Add development dependency for testing
+% uv run pytest        # Run the tests
+```
+
+- pytest documentation: https://docs.pytest.org/en/stable/
+
+1. Create your own folder for tests.
+2. Add different testing scenarios.
+3. Parametrize one of your tests.
+4. Purposely break your code.
+5. Check that the tests fail.
+6. Fix your code.
+7. Check that the tests pass.
