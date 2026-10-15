@@ -17,3 +17,4 @@
 2. Add some source code.
 3. Add a dependency.
 4. Check that everything runs.
+5. Create a GitHub repository for your project and commit everything
