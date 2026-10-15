@@ -115,3 +115,22 @@ GH Action configuration lives in `.github/workflows/*.yaml`.
 3. Run it (manually or by opening a PR)
 4. Complete the action so it also runs linting, type checking, and the tests
 5. Trigger it again to make sure it works
+
+
+# Publishing to (Test)PyPI
+
+If you save your token in `.env`, make sure to add that file to `.gitignore`!
+
+```bash
+% uv build                                                # Build the project
+
+% # Add the TestPyPI configuration to pyproject.toml.
+
+% uv publish --index testpypi --token <paste token here>  # Publish to Test PyPI
+
+% set -a; source .env; set +a                             # Export the UV_PUBLISH_TOKEN in .env (Unix/WSL)
+% uv publish --index testpypi                             # Publish to Test PyPI using the token from .env
+```
+
+- Test PyPI: https://test.pypi.org/
+- uv package publishing documentation: https://docs.astral.sh/uv//guides/package/
