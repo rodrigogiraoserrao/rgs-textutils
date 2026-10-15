@@ -33,6 +33,10 @@
 
 - uv dependency management: https://docs.astral.sh/uv/concepts/projects/dependencies/
 - uv tool running: https://docs.astral.sh/uv/concepts/projects/run/
+- Ruff documentation: https://docs.astral.sh/ruff
+  - Formatting: https://docs.astral.sh/ruff/formatter/
+  - Linting: https://docs.astral.sh/ruff/linter/
+- ty documentation: https://docs.astral.sh/ty/
 
 1. Mess up the format of your code on purpose.
 2. Add unused imports.
