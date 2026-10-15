@@ -91,3 +91,14 @@ Pre-commit configuration lives in `.pre-commit-config.yaml`.
 3. Add a local hook to run pytest.
 4. Try to make a commit with a problem (e.g., formatting is off).
 5. Check that the commit is blocked.
+
+---
+
+# BREAK
+
+1. Create an account on https://test.pypi.org
+2. Verify your email address
+3. Enable 2-Factor Authentication (2FA) for your account
+4. Make sure that the project you're working on is pushed to a public GitHub repo
+
+---
