@@ -102,3 +102,16 @@ Pre-commit configuration lives in `.pre-commit-config.yaml`.
 4. Make sure that the project you're working on is pushed to a public GitHub repo
 
 ---
+
+# GitHub Actions
+
+GH Action configuration lives in `.github/workflows/*.yaml`.
+
+- GitHub Actions quickstart: https://docs.github.com/en/actions/get-started/quickstart
+- uv GitHub action: https://docs.astral.sh/uv//guides/integration/github/
+
+1. Set up your GH repo
+2. Set up the code-quality.yaml workflow
+3. Run it (manually or by opening a PR)
+4. Complete the action so it also runs linting, type checking, and the tests
+5. Trigger it again to make sure it works
