@@ -18,3 +18,26 @@
 3. Add a dependency.
 4. Check that everything runs.
 5. Create a GitHub repository for your project and commit everything
+
+
+# Quality checks
+
+```bash
+% uv add --dev ty ruff     # Add development dependencies
+
+% uv run ruff format       # Format code
+% uv run ruff check        # Lint your code
+% uv run ruff check --fix  # Lint and auto-fix your code
+% uv run ty check          # Type-check your code
+```
+
+- uv dependency management: https://docs.astral.sh/uv/concepts/projects/dependencies/
+- uv tool running: https://docs.astral.sh/uv/concepts/projects/run/
+
+1. Mess up the format of your code on purpose.
+2. Add unused imports.
+3. Change the type hints so they become wrong.
+4. Install Ruff and ty as development dependencies.
+5. Run a formatter, a linter, and a type checker.
+6. Fix all issues you find along the way.
+7. Take your project and upload it to a GH repo.
