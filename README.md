@@ -134,3 +134,6 @@ If you save your token in `.env`, make sure to add that file to `.gitignore`!
 
 - Test PyPI: https://test.pypi.org/
 - uv package publishing documentation: https://docs.astral.sh/uv//guides/package/
+
+
+# Trusted publishing
