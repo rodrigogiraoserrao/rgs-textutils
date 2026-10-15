@@ -137,3 +137,21 @@ If you save your token in `.env`, make sure to add that file to `.gitignore`!
 
 
 # Trusted publishing
+
+```bash
+% uv version --bump major      # Bump major version
+% uv version --bump minor      # Bump minor version
+% uv version --bump patch      # Bump patch version
+
+% git tag -a vX.Y.Z -m vX.Y.Z  # Create the tag vX.Y.Z
+
+% git push                     # Push changes and tags
+% git push --tags              # Push just the tags
+```
+
+- uv trusted publishing documentation: https://docs.astral.sh/uv//guides/integration/github/#publishing-to-pypi
+
+1. Create the `release.yaml` workflow
+2. Create the `testpypi` environment on GitHub (under settings)
+3. Set up trusted publishing from the Test PyPI account
+4. Create a new tag and push it to test everything
