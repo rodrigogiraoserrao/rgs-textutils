@@ -65,3 +65,29 @@ Tests live in `<project root>/tests`.
 5. Check that the tests fail.
 6. Fix your code.
 7. Check that the tests pass.
+
+
+# Automatic quality checks on commit
+
+Pre-commit configuration lives in `.pre-commit-config.yaml`.
+
+```bash
+% uv add --dev pre-commit                                    # Add dev dependency for pre-commit hooks
+
+% uv run pre-commit sample-config > .pre-commit-config.yaml  # Create sample configuration file
+
+% # Configure remaining hooks...
+
+% uv run pre-commit install                                  # Install the hooks
+
+% uv run pre-commit run --all-files                          # Sanity check: run all hooks
+```
+
+- pre-commit documentation: https://pre-commit.com/#install
+- Ruff pre-commit: https://docs.astral.sh/ruff/integrations/#pre-commit
+
+1. Set-up pre-commit.
+2. Add hooks for all the tools that we're running.
+3. Add a local hook to run pytest.
+4. Try to make a commit with a problem (e.g., formatting is off).
+5. Check that the commit is blocked.
